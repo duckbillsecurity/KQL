@@ -52,3 +52,34 @@ Kusto Query Language (KQL) is a powerful language used for analyzing and extract
 #### 10. `distinct`
 - Returns unique rows.
 - Example: `SecurityEvent | distinct AccountName`
+
+## Data Schema in KQL
+
+### Understanding the Data Schema in the Context of KQL
+
+Kusto Query Language (KQL) is designed to work with data in Azure Data Explorer, which is highly structured. Understanding the data schema is crucial for formulating effective queries and extracting meaningful insights.
+
+#### What is a Data Schema?
+
+- A data schema in KQL defines the structure of data in a database. It includes the organization of data as tables and columns and defines how data is stored, accessed, and managed.
+
+#### Characteristics of KQL Data Schema
+
+- **Tables**: In KQL, data is organized into tables. Each table is similar to a table in a relational database and represents a specific type of data or log.
+- **Columns**: Each table consists of columns, where each column has a specific data type, like string, integer, datetime, etc.
+- **Data Types**: KQL supports various data types, including but not limited to strings, integers, datetime, and complex types like arrays and dictionaries.
+
+### How Data is Structured in KQL Queries
+
+#### Basic Structure
+
+- KQL queries operate on these tables and columns. The basic structure of a KQL query involves specifying the table to query and then applying various transformations and filters, like `where`, `project`, and `summarize`.
+
+#### Example Structure
+
+```kql
+TableName
+| where ColumnName == "Value"
+| project Column1, Column2
+| summarize Count() by Column1
+
