@@ -32,10 +32,11 @@ Kusto Query Language (KQL) is a powerful language used for analyzing and extract
 #### 5. `join`
 - Combines rows from two or more tables based on a related column.
 - Example:
-`SecurityEvent
+```kql
+SecurityEvent
 | join Heartbeat on Computer
 | where EventID == "4688"
-| project Computer, OSType, OSMajorVersion, Version`
+| project Computer, OSType, OSMajorVersion, Version
 
 #### 6. `extend`
 - Creates new columns by calculating values from existing columns.
