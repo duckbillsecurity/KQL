@@ -5,11 +5,36 @@ A collection of resources for further learning and exploration of Kusto Query La
 ### Must Learn KQL
 
 - **MustLearnKQL by Rod Trent**
-  - This repository is a valuable resource for those looking to deepen their understanding of KQL. It contains a wealth of information, examples, and tutorials.
+  - A valuable resource with information, examples, and tutorials on KQL.
   - GitHub Repository: [MustLearnKQL](https://github.com/rod-trent/MustLearnKQL)
 
 ### Detective Kusto Interactive Tutorial
 
 - **Detective Kusto**
-  - An interactive tutorial that offers a hands-on approach to learning KQL. Great for beginners and those who prefer learning by doing.
+  - An interactive tutorial for learning KQL through hands-on experience.
   - Access here: [Detective Kusto](https://detective.kusto.io/)
+
+### Microsoft's KQL Learning Resources
+
+- **Microsoft KQL Learning Resources**
+  - A comprehensive collection of learning materials and documentation for KQL provided by Microsoft.
+  - Learn more: [KQL Learning Resources](https://learn.microsoft.com/en-us/azure/data-explorer/kql-learning-resources)
+
+### Kusto Query Language Documentation
+
+- **Kusto Query Language (KQL) Documentation**
+  - Detailed documentation and reference for KQL, covering syntax, functions, and best practices.
+  - Access here: [KQL Documentation](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/)
+
+### Introduction to Azure Data Explorer
+
+- **Microsoft Learn: Introduction to Azure Data Explorer**
+  - An introductory module on Azure Data Explorer, which provides a foundational understanding of how to use KQL within it.
+  - Start learning: [Intro to Azure Data Explorer](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-explorer/)
+
+### KQL Overview by John Savill
+
+- **KQL Overview - John Savill's Technical Training**
+  - A YouTube tutorial providing an overview of KQL, ideal for visual learners.
+  - Watch here: [KQL Overview](https://www.youtube.com/watch?v=Pl8n6GaWEo0)
+
