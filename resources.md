@@ -4,6 +4,7 @@ A collection of resources for further learning and exploration of Kusto Query La
 
 https://github.com/Bert-JanP/Hunting-Queries-Detection-Rules
 https://securediam.com/f/entra-id-monitoring-and-alerting---are-you-doing-the-basics?utm_source=substack&utm_medium=email
+https://kqlquery.com/posts/audit-defender-xdr/
 
 ### Must Learn KQL
 
