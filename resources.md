@@ -2,9 +2,14 @@
 
 A collection of resources for further learning and exploration of Kusto Query Language (KQL) and related topics.
 
-https://github.com/Bert-JanP/Hunting-Queries-Detection-Rules
-https://securediam.com/f/entra-id-monitoring-and-alerting---are-you-doing-the-basics?utm_source=substack&utm_medium=email
-https://kqlquery.com/posts/audit-defender-xdr/
+- **GitHub**
+- https://github.com/Bert-JanP/Hunting-Queries-Detection-Rules
+- https://kqlquery.com/posts/audit-defender-xdr/
+- https://securediam.com/f/entra-id-monitoring-and-alerting---are-you-doing-the-basics?utm_source=substack&utm_medium=email
+- https://github.com/KQLMSPress/definitive-guide-kql
+
+### Books
+- The Definitive Guide to KQL: Using Kusto Query Language for operations, defending, and threat hunting https://www.microsoftpressstore.com/store/definitive-guide-to-kql-using-kusto-query-language-9780138293383
 
 ### Must Learn KQL
 
