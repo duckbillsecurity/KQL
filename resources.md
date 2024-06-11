@@ -3,6 +3,7 @@
 A collection of resources for further learning and exploration of Kusto Query Language (KQL) and related topics.
 
 - **GitHub**
+- https://github.com/marcusbakker/KQL/blob/master/kql_cheat_sheet.pdf
 - https://github.com/Bert-JanP/Hunting-Queries-Detection-Rules
 - https://kqlquery.com/posts/audit-defender-xdr/
 - https://securediam.com/f/entra-id-monitoring-and-alerting---are-you-doing-the-basics?utm_source=substack&utm_medium=email
