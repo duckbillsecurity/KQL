@@ -9,6 +9,7 @@ A collection of resources for further learning and exploration of Kusto Query La
 - https://securediam.com/f/entra-id-monitoring-and-alerting---are-you-doing-the-basics?utm_source=substack&utm_medium=email
 - https://github.com/KQLMSPress/definitive-guide-kql
 - https://identityandsecuritydotcom.wordpress.com/wp-content/uploads/2020/05/kql_internals_sentinel.pdf
+- https://learnsentinel.blog/
 
 ### Books
 - The Definitive Guide to KQL: Using Kusto Query Language for operations, defending, and threat hunting https://www.microsoftpressstore.com/store/definitive-guide-to-kql-using-kusto-query-language-9780138293383
