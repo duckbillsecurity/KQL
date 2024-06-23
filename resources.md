@@ -15,6 +15,7 @@ A collection of resources for further learning and exploration of Kusto Query La
 ### Convert
 - https://github.com/SigmaHQ/sigma
 - https://uncoder.io/
+- https://socprime.com/why-socprime/
   
 ### Books
 - The Definitive Guide to KQL: Using Kusto Query Language for operations, defending, and threat hunting https://www.microsoftpressstore.com/store/definitive-guide-to-kql-using-kusto-query-language-9780138293383
