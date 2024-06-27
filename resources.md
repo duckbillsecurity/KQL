@@ -11,6 +11,7 @@ A collection of resources for further learning and exploration of Kusto Query La
 - https://github.com/KQLMSPress/definitive-guide-kql
 - https://identityandsecuritydotcom.wordpress.com/wp-content/uploads/2020/05/kql_internals_sentinel.pdf
 - https://learnsentinel.blog/
+- https://blog.stratumsecurity.com/2024/02/16/post-email-delivery-analysis-using-microsoft-sentinel/
 
 ### Convert
 - https://github.com/SigmaHQ/sigma
