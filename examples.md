@@ -19,6 +19,44 @@ DeviceProcessEvents
 
 
 
+# Function to validate email format
+function Validate-Email {
+    param (
+        [string]$Email
+    )
+    return $Email -match '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+}
+
+# Function to sanitize and validate input
+function Sanitize-Records {
+    param (
+        [array]$Records
+    )
+    
+    $sanitizedRecords = @()
+
+    foreach ($record in $Records) {
+        # Trim whitespace
+        $record.Name = $record.Name.Trim()
+        $record.Name1 = $record.Name1.Trim()
+        $record.Name2 = $record.Name2.Trim()
+        $record.Name3 = $record.Name3.Trim()
+
+        # Validate email format
+        if (-not (Validate-Email -Email $record.EmailAddress)) {
+            Write-Host "Invalid email address: $($record.EmailAddress)" -ForegroundColor Red
+            continue
+        }
+
+        # Add to sanitized records if all checks pass
+        $sanitizedRecords += $record
+    }
+
+    return $sanitizedRecords
+}
+
+
+
 
 ```
 
