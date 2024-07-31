@@ -60,3 +60,33 @@ function Sanitize-Records {
 
 ```
 
+
+// name: World Writable Execution - Non-Temp System Subdirectory
+// description: Detect process execution from a world writable location in a subdirectory of the Windows OS install location.
+// author: ASD's ACSC
+DeviceProcessEvents
+| where FolderPath has_any (
+    ":\\$Recycle.Bin\\", ":\\AMD\\Temp\\", ":\\Intel\\", ":\\PerfLogs\\", ":\\Windows\\addins\\",
+    ":\\Windows\\appcompat\\", ":\\Windows\\apppatch\\", ":\\Windows\\AppReadiness\\", ":\\Windows\\bcastdvr\\",
+    ":\\Windows\\Boot\\", ":\\Windows\\Branding\\", ":\\Windows\\CbsTemp\\", ":\\Windows\\Containers\\",
+    ":\\Windows\\csc\\", ":\\Windows\\Cursors\\", ":\\Windows\\debug\\", ":\\Windows\\diagnostics\\",
+    ":\\Windows\\DigitalLocker\\", ":\\Windows\\dot3svc\\", ":\\Windows\\en-US\\", ":\\Windows\\Fonts\\",
+    ":\\Windows\\Globalization\\", ":\\Windows\\Help\\", ":\\Windows\\IdentityCRL\\", ":\\Windows\\IME\\",
+    ":\\Windows\\ImmersiveControlPanel\\", ":\\Windows\\INF\\", ":\\Windows\\intel\\", ":\\Windows\\L2Schemas\\",
+    ":\\Windows\\LiveKernelReports\\", ":\\Windows\\Logs\\", ":\\Windows\\media\\", ":\\Windows\\Migration\\",
+    ":\\Windows\\ModemLogs\\", ":\\Windows\\ms\\", ":\\Windows\\OCR\\", ":\\Windows\\panther\\",
+    ":\\Windows\\Performance\\", ":\\Windows\\PLA\\", ":\\Windows\\PolicyDefinitions\\", ":\\Windows\\Prefetch\\",
+    ":\\Windows\\PrintDialog\\", ":\\Windows\\Provisioning\\", ":\\Windows\\Registration\\CRMLog\\",
+    ":\\Windows\\RemotePackages\\", ":\\Windows\\rescache\\", ":\\Windows\\Resources\\", ":\\Windows\\SchCache\\",
+    ":\\Windows\\schemas\\", ":\\Windows\\security\\", ":\\Windows\\ServiceState\\", ":\\Windows\\servicing\\",
+    ":\\Windows\\Setup\\", ":\\Windows\\ShellComponents\\", ":\\Windows\\ShellExperiences\\", ":\\Windows\\SKB\\",
+    ":\\Windows\\TAPI\\", ":\\Windows\\Tasks\\", ":\\Windows\\TextInput\\", ":\\Windows\\tracing\\",
+    ":\\Windows\\Vss\\", ":\\Windows\\WaaS\\", ":\\Windows\\Web\\", ":\\Windows\\wlansvc\\",
+    ":\\Windows\\System32\\Com\\dmp\\", ":\\Windows\\System32\\FxsTmp\\", ":\\Windows\\System32\\Microsoft\\Crypto\\RSA\\MachineKeys\\",
+    ":\\Windows\\System32\\Speech\\", ":\\Windows\\System32\\spool\\drivers\\color\\", ":\\Windows\\System32\\spool\\PRINTERS\\",
+    ":\\Windows\\System32\\spool\\SERVERS\\", ":\\Windows\\System32\\Tasks_Migrated\\Microsoft\\Windows\\PLA\\System\\",
+    ":\\Windows\\System32\\Tasks\\", ":\\Windows\\SysWOW64\\Com\\dmp\\", ":\\Windows\\SysWOW64\\FxsTmp\\",
+    ":\\Windows\\SysWOW64\\Tasks\\"
+)
+| where not (FolderPath contains "\\AppData\\" and AccountName =~ "SYSTEM")
+
